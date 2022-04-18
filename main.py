@@ -1,4 +1,5 @@
-from colorama import Fore, time
+from colorama import Fore
+import time
 print(Fore.BLUE + "Welcome to supplyManage3 by COSMOS")
 print(Fore.BLUE + "Type .help to view all commands.\n")
 initcmd = input(Fore.RED + "$$: ")
