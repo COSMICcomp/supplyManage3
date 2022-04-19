@@ -4,7 +4,7 @@ class cos:
     self.version = version
     self.stat = stat
   def version():
-    print("Version 3 Dev")
+    print("Version 3.5 Dev")
   def stat():
     works = True # Changes
     if works != True:
@@ -12,5 +12,5 @@ class cos:
     else:
       print("Up && Running --> Dev ENV")
 
-# cos.version() if want to check version
-# cos.stat() if want to check status of operation
+cos.version() #if want to check version
+cos.stat() #if want to check status of operation

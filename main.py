@@ -14,7 +14,7 @@ while True:
       "More than one product and chain can be added\n"
       "To export a chain: .chain.exp\n"
       "Get help to import a chain by .help.imp\n"
-      "To return a product from a chain: .profind"
+      "To return a product from a chain: .find"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.chain':
@@ -58,7 +58,7 @@ while True:
     except FileNotFoundError:
       print("No exported data file found.")
       initcmd = input(Fore.RED + "$$: ")
-  elif initcmd == '.profind':
+  elif initcmd == '.find':
     askprx = input(Fore.CYAN + "Name of Product: ").strip()
     if askprx in chainprod:
       res = chainprod.index(askprx)

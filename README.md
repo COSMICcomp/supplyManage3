@@ -11,4 +11,9 @@ Created by COSMOS
 2. ```pip install -r requirements.txt```
 3. ```python3 main.py```
 
-## Version: 3
+## supplyCOS
+
+To check version and status of build, type:
+```python3 cos.py```
+
+### Version 3.5
