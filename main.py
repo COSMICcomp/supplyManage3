@@ -47,7 +47,7 @@ while True:
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.help.imp': 
     print("To import, make sure that the data that\n")
-    print("was exported through supplyManage remains\n")
+    print("was exported through supplyManage commands\n")
     print("untouched. Use .import to get started\n")
     print("If import works, then instance will end.")
   elif initcmd == '.import':
