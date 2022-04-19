@@ -6,7 +6,6 @@ cffi==1.15.0
 charset-normalizer==2.0.7
 cleo==0.8.1
 clikit==0.6.2
-colorama @ file:///home/runner/.cache/pypoetry/artifacts/fe/a0/ce/843e39b29d71f3a3c6da7ba0b1ea81673a1f075633837bdbc108f97e21/colorama-0.4.4-py2.py3-none-any.whl
 crashtest==0.3.1
 cryptography==35.0.0
 debugpy==1.2.1
@@ -22,7 +21,6 @@ jeepney==0.7.1
 keyring==21.8.0
 lockfile==0.12.2
 msgpack==1.0.2
-numpy @ file:///home/runner/.cache/pypoetry/artifacts/0a/f1/63/4e86e206dd78b5ffa1d0b33299c8275c3e1a2411fac9d63320ce69de5f/numpy-1.22.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
 packaging==20.9
 parso==0.5.2
 pastel==0.2.1
@@ -56,3 +54,4 @@ webencodings==0.5.1
 yapf==0.31.0
 yarg==0.1.9
 zipp==3.4.1
+colorama==0.4.4

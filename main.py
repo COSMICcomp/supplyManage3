@@ -3,7 +3,7 @@ import time
 print(Fore.BLUE + "Welcome to supplyManage3 by COSMOS")
 print(Fore.BLUE + "Type .help to view all commands.\n")
 initcmd = input(Fore.RED + "$$: ")
-
+chain = ''
 while True: 
   if initcmd == '.help':
     print(Fore.BLUE +
@@ -55,8 +55,12 @@ while True:
       with open('data.txt', 'r') as filetype:
         a = filetype.read()
         print(a)
+        g = True
+        lines = filetype.readlines()
+        initcmd = input(Fore.RED + "$$: ")      
     except FileNotFoundError:
       print("No exported data file found.")
+      g = False
       initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.find':
     askprx = input(Fore.CYAN + "Name of Product: ").strip()
@@ -69,5 +73,12 @@ while True:
       print("The destination is " + str(desti))
       initcmd = input(Fore.RED + "$$: ")
     else:
+      print("Not Found")
+      initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == '.imp.read':
+    if g == True:
+      print(*a)
+      initcmd = input(Fore.RED + "$$: ")
+    elif g == False:
       print("Not Found")
       initcmd = input(Fore.RED + "$$: ")
