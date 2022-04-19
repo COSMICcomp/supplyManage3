@@ -12,13 +12,15 @@ while True:
       "create 'chains' which simulate real supplyChains. Create a\n"
       "a chain by using the command 'chain'. Create a product in a\n"
       "chain by 'chain.pro'.\n"
-      "More than one product and chain can be added\n"
+      "More than one product can be added\n"
+      "No More than one chain\n"
       "To export a chain: chain.export\n"
       "Get help to import a chain by help.import\n"
       "To return a product from a chain: find\n"
       "After import read it by: import.read\n"
       "To delete a product: del\n"
       "New product with a preset shipping and destination: pro.help"
+      "To list all in CMD: display"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'chain':
@@ -127,3 +129,20 @@ while True:
     chaintype.append(xres2)
     chaindesti.append(xres3)
     initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'display':
+    proxxi = chainprod[:10]  
+    proxxii = chaintype[:10]  
+    proxxioo = chaindesti[:10]  
+    askifasspasm = int(input("Products, Shipping, or Destination(1, 2, 3): "))
+    if askifasspasm == 1:
+      print(proxxi)
+      initcmd = input(Fore.RED + "$$: ")
+    elif askifasspasm == 2:
+      print(proxxii)
+      initcmd = input(Fore.RED + "$$: ")
+    elif askifasspasm == 3:
+      print(proxxioo)
+      initcmd = input(Fore.RED + "$$: ")
+    else:
+      print('Not Valid')
+      initcmd = input(Fore.RED + "$$: ")

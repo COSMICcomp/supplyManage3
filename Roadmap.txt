@@ -1,9 +1,12 @@
-4.1
+4.1 - Commands Update 
 ---
-Patch 1 --> Add Multi Set Support
-Patch 2 --> Add Support For Exporting Sets
+Update 1 --> Bug Fix
+Update 2 --> Add display command
+Update 3 --> If random arugement is placed, restart whileloop ++ re command
 
-4.2
+4.2 - Sets Update
 ---
 Patch 1 --> Add Sets For Other Things
 Patch 2 --> Set Exporting 
+Patch 3 --> Add Multi Set Support
+Patch 4 --> Add Support For Exporting Sets
