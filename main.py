@@ -15,6 +15,7 @@ while True:
       "To export a chain: .chain.exp\n"
       "Get help to import a chain by .help.imp\n"
       "To return a product from a chain: .find"
+      "After import read it by: .imp.read"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.chain':
