@@ -146,3 +146,8 @@ while True:
     else:
       print('Not Valid')
       initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'cosmos.des{all}':
+    break
+  elif ValueError:
+    print("Not A Command! Try Again")
+    initcmd = input(Fore.RED + "$$: ")
