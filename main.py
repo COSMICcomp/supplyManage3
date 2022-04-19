@@ -16,6 +16,7 @@ while True:
       "Get help to import a chain by .help.imp\n"
       "To return a product from a chain: .find"
       "After import read it by: .imp.read"
+      "To delete a product: del"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.chain':
@@ -81,5 +82,18 @@ while True:
       print(*a)
       initcmd = input(Fore.RED + "$$: ")
     elif g == False:
+      print("Not Found")
+      initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'del':
+    watdn = input("Which product: ").strip()
+    if watdn in chainprod: 
+      res = chainprod.index(watdn)
+      type = chaintype[res]
+      desti = chaindesti[res]
+      del chaintype[res]
+      del chaindesti[res]
+      del chainprod[res]
+      initcmd = input(Fore.RED + "$$: ")
+    else:
       print("Not Found")
       initcmd = input(Fore.RED + "$$: ")
