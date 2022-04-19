@@ -13,7 +13,8 @@ while True:
       "chain by '.chain.pro'.\n"
       "More than one product and chain can be added\n"
       "To export a chain: .chain.exp\n"
-      "Get help to import a chain by .help.imp"
+      "Get help to import a chain by .help.imp\n"
+      "To return a product from a chain: .profind"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == '.chain':
@@ -56,4 +57,17 @@ while True:
         print(a)
     except FileNotFoundError:
       print("No exported data file found.")
+      initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == '.profind':
+    askprx = input(Fore.CYAN + "Name of Product: ").strip()
+    if askprx in chainprod:
+      res = chainprod.index(askprx)
+      type = chaintype[res]
+      desti = chaindesti[res]
+      print(f"The product {askprx} was found")
+      print("The shipping type is " + str(type))
+      print("The destination is " + str(desti))
+      initcmd = input(Fore.RED + "$$: ")
+    else:
+      print("Not Found")
       initcmd = input(Fore.RED + "$$: ")
