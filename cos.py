@@ -3,7 +3,7 @@ class cos:
     self.version = version
     self.stat = stat
   def version():
-    print("Version 3.5 Dev")
+    print("Version 4 Beta")
   def stat():
     works = True # Changes
     if works != True:
