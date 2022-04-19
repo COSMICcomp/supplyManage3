@@ -1,4 +1,3 @@
-# Just for the funnies, but can check version and status.
 class cos:
   def __init__(self, version, stat):
     self.version = version
