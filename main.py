@@ -4,7 +4,8 @@ print(Fore.BLUE + "Welcome to supplyManage3 by COSMOS")
 print(Fore.BLUE + "Type 'help' to view all commands.\n")
 initcmd = input(Fore.RED + "$$: ")
 chain = ''
-while True: 
+axad = ''
+while True:
   if initcmd == 'help':
     print(Fore.BLUE +
       "Welcome to supplyManage3 by COSMOS. In this program you can\n"
@@ -48,11 +49,12 @@ while True:
     textfile.close()
     print(Fore.GREEN + 'Done.')
     initcmd = input(Fore.RED + "$$: ")
-  elif initcmd == 'help.import': 
+  elif initcmd == 'help.import':
     print("To import, make sure that the data that\n")
     print("was exported through supplyManage commands\n")
     print("untouched. Use import to get started\n")
     print("If import works, then instance will end.")
+    initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'import':
     try:
       with open('data.txt', 'r') as filetype:
@@ -85,9 +87,12 @@ while True:
     elif g == False:
       print("Not Found")
       initcmd = input(Fore.RED + "$$: ")
+    else:
+      print("Not Found")
+      initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'del':
     watdn = input("Which product: ").strip()
-    if watdn in chainprod: 
+    if watdn in chainprod:
       res = chainprod.index(watdn)
       type = chaintype[res]
       desti = chaindesti[res]
