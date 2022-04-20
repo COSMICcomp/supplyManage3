@@ -19,8 +19,11 @@ while True:
       "To return a product from a chain: find\n"
       "After import read it by: import.read\n"
       "To delete a product: del\n"
-      "New product with a preset shipping and destination: pro.help"
-      "To list all in CMD: display"
+      "New product with a preset shipping and destination: pro.help\n"
+      "To list all in CMD: display\n"
+      "To create a biome: biome create\n"
+      "To export: biome export\n"
+      "To import: biome import\n"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'chain':
@@ -146,7 +149,39 @@ while True:
     else:
       print('Not Valid')
       initcmd = input(Fore.RED + "$$: ")
-  elif initcmd == 'cosmos.des{all}':
+  elif initcmd == 'biome create':
+    biomes = []
+    xser = input("Biome Name: ")
+    sakfhsl = input("Biome Type (Cars, Ships): ")
+    xres59 = input("What Product To Link: ")
+    try:
+      xres60 = chainprod.index(xres59)
+    except NameError:
+      print("No Products Found")
+      initcmd = input(Fore.RED + "$$: ")
+    biomes.append(xser)
+    xprox = {}
+    xprox[sakfhsl] = chainprod[xres60]
+    asope = True   
+    initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'biome export':
+    textfile2 = open("biome.txt", "w")
+    for element2 in xprox:
+      textfile2.write(str(element2) + ' : ' + str(xprox[element2]) + '\n')
+    textfile2.close()
+    print(Fore.GREEN + 'Done.')
+    initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'biome import':
+    try:
+      with open('biome.txt', 'r') as filetype3:
+        a3 = filetype3.read()
+        print(a3)
+        lines3 = filetype3.readlines()
+        initcmd = input(Fore.RED + "$$: ")      
+    except FileNotFoundError:
+      print("No exported data file found.")
+      initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'cosmos.des{}':
     break
   elif ValueError:
     print("Not A Command! Try Again")

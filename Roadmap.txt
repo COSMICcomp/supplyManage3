@@ -6,6 +6,7 @@ Update 3 --> If random arugement is placed, restart whileloop ++ re command
 
 4.2 - Sets Update
 ---
+Update 1 --> Biomes Add
 Patch 1 --> Add Sets For Other Things
 Patch 2 --> Set Exporting 
 Patch 3 --> Add Multi Set Support
