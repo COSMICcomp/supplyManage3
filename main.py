@@ -1,6 +1,6 @@
 from colorama import Fore
 import time
-print(Fore.BLUE + "Welcome to supplyManage3 by COSMOS")
+print(Fore.BLUE + "Welcome to supplyManage4 by COSMOS")
 print(Fore.BLUE + "Type 'help' to view all commands.\n")
 initcmd = input(Fore.RED + "$$: ")
 chain = ''
@@ -8,7 +8,7 @@ axad = ''
 while True:
   if initcmd == 'help':
     print(Fore.BLUE +
-      "Welcome to supplyManage3 by COSMOS. In this program you can\n"
+      "Welcome to supplyManage4 by COSMOS. In this program you can\n"
       "create 'chains' which simulate real supplyChains. Create a\n"
       "a chain by using the command 'chain'. Create a product in a\n"
       "chain by 'chain.pro'.\n"
