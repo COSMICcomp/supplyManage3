@@ -24,6 +24,8 @@ while True:
       "To create a biome: biome create\n"
       "To export: biome export\n"
       "To import: biome import\n"
+      "To find the number of products: len\n"
+      "Exit through the command: break"
     )
     initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'chain':
@@ -182,6 +184,15 @@ while True:
       print("No exported data file found.")
       initcmd = input(Fore.RED + "$$: ")
   elif initcmd == 'cosmos.des{}':
+    break
+  elif initcmd == 'len':
+    try:
+      print(len(chainprod))
+      initcmd = input(Fore.RED + "$$: ")
+    except:
+      print('NotFound.')
+      initcmd = input(Fore.RED + "$$: ")
+  elif initcmd == 'break':
     break
   elif ValueError:
     print("Not A Command! Try Again")
